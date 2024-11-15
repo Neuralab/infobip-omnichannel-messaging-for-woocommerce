@@ -1,0 +1,16 @@
+.banner {
+  padding: $spacer * 3;
+  margin-bottom: $spacer * 5;
+  background-color: $blue-4;
+  border-radius: 2px;
+  border: 1px solid $blue-3;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.banner__title {
+  margin-bottom: $spacer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}

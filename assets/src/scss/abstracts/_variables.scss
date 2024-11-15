@@ -1,0 +1,87 @@
+/**
+ * Variables
+ */
+
+$custom-var-prefix: 'infobip-omnichannel';
+
+/**
+ * Colors
+ */
+$white:   #fff;
+$black:   #000;
+
+$orange-1: #D1521C;
+$orange-2: #FC6423;
+$orange-3: #FFF5EB;
+
+$blue-1: #222E42;
+$blue-2: #2176AE;
+$blue-3: #D0DCF2;
+$blue-4: #E7ECF7;
+$blue-5: #F2F5FA;
+
+$green-1: #208560;
+$green-2: #D8F5EA;
+
+$red-1: #CF182E;
+$red-2: #FCE8EB;
+
+/**
+* Spacing
+*/
+$spacer: 8px;
+
+$spacers: (
+  0: 0,
+  1: calc($spacer * 1),
+  2: calc($spacer * 2),
+  3: calc($spacer * 3),
+  4: calc($spacer * 4),
+  5: calc($spacer * 5),
+  6: calc($spacer * 6),
+  7: calc($spacer * 7),
+  8: calc($spacer * 8),
+);
+
+/**
+ * Grid
+ */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 360px,
+  md: 782px,
+  lg: 960px,
+  xl: 1024px,
+);
+
+/**
+ * Font sizes
+ */
+$font-scale: (
+  1: ( font-size: 24px, line-height: 32px ),
+  2: ( font-size: 20px, line-height: 30px ),
+  3: ( font-size: 16px, line-height: 24px ),
+  4: ( font-size: 14px, line-height: 24px ),
+  5: ( font-size: 14px, line-height: 16px ),
+  6: ( font-size: 12px, line-height: 16px ),
+);
+
+
+/**
+ * Transitions
+ */
+$trans-duration-base:        .2s;
+$trans-timing-function-base: ease-in-out;
+
+
+/**
+ * Characters which are escaped by the escape-svg function
+ */
+
+$escaped-characters: (
+  ("<", "%3c"),
+  (">", "%3e"),
+  ("#", "%23"),
+  ("(", "%28"),
+  (")", "%29"),
+);

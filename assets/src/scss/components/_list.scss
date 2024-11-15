@@ -1,0 +1,11 @@
+.list-styled {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: $spacer * 5;
+  @extend %scale-3;
+
+  li::marker {
+    color: $orange-2;
+    margin-right: $spacer;
+  }
+}

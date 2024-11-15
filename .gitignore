@@ -1,0 +1,14 @@
+# Server and OS
+.DS_Store
+.htaccess
+.well-known
+.ftpquota
+*.log
+
+# Node
+node_modules/
+assets/dist
+mix-manifest.json
+
+# Composer
+/vendor

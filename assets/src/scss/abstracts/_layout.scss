@@ -1,0 +1,78 @@
+/**
+ * Global layout styling
+ */
+
+.infobip-omnichannel-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: $white;
+  padding: $spacer * 2 $spacer * 3;
+  border-bottom: 1px solid $blue-5;
+  z-index: 1;
+
+  .logo {
+    display: block;
+  }
+}
+
+.grid-sidebar__nav {
+  background-color: white;
+
+  padding: $spacer * 3;
+}
+
+.grid-sidebar__nav + .grid-sidebar__content {
+  margin-left: 0;
+}
+
+.grid-sidebar__content {
+  padding: $spacer * 5;
+  max-width: 768px;
+}
+
+.grid-dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacer * 3;
+}
+
+.g-2 {
+  gap: $spacer * 2;
+}
+
+@media only screen and (min-width: 783px) {
+  .infobip-omnichannel-header {
+    position: fixed;
+    top: 32px;
+    left: 36px;
+  }
+
+  .grid-dashboard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-sidebar__nav {
+    position: fixed;
+    top: 105px;
+    bottom: 0;
+    border-right: 1px solid $blue-4;
+  }
+
+  .grid-sidebar__nav + .grid-sidebar__content {
+    margin-left: 248px;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .infobip-omnichannel-header {
+    left: 160px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .grid-dashboard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

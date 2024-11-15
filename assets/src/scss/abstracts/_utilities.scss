@@ -1,0 +1,58 @@
+/**
+ * Helpers
+ */
+
+/**
+ * Get custom var.
+ */
+@function get-var($name) {
+  @return var(--#{$custom-var-prefix}-#{$name});
+}
+
+/**
+ * Set custom var.
+ */
+@mixin set-var($name, $value) {
+  --#{$custom-var-prefix}-#{$name}: #{$value};
+}
+
+/**
+ * Transition
+ */
+@mixin base-transition($property) {
+  transition-property:        $property;
+  transition-duration:        $trans-duration-base;
+  transition-timing-function: $trans-timing-function-base;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.mw-none {
+  max-width: none !important;
+}

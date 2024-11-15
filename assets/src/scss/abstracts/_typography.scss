@@ -1,0 +1,21 @@
+/**
+ * Typography scales
+ */
+
+@each $level, $sizes in $font-scale {
+  %scale-#{$level} {
+    font-size: map-get($sizes, 'font-size') !important;
+    line-height: map-get($sizes, 'line-height') !important;
+  }
+
+  .scale-#{$level} {
+    @extend %scale-#{$level};
+  }
+}
+
+@each $level, $sizes in $font-scale {
+  h#{$level} {
+    @extend %scale-#{$level};
+  }
+}
+

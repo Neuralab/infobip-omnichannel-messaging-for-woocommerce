@@ -1,0 +1,73 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 999999;
+
+  .modal-backdrop {
+    background: rgba(#000, 0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+  }
+
+  .modal-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 2px;
+    max-width: 668px;
+    position: fixed;
+    top: 20%;
+    transition: all 0.3s ease;
+    z-index: 999999;
+  }
+
+  .iomni-modal-close-icon {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+
+  .modal-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: $spacer * 3;
+  }
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+
+    .modal-content {
+      top: 25%;
+    }
+  }
+
+  #alert-activate {
+    display: block;
+  }
+
+  #btn-activate {
+    display: none;
+  }
+
+  &.activate {
+    #alert-activate {
+      display: none;
+    }
+
+    #btn-activate {
+      display: block;
+    }
+
+  }
+}

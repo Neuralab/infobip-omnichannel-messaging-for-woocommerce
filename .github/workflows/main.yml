@@ -1,0 +1,24 @@
+name: New release
+on:
+  release:
+    types: [published]
+jobs:
+  tag:
+    name: Run release commands
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Build
+      run: |
+        composer install --no-dev
+        npm ci
+        npx mix --production
+    - name: Generate zip
+      uses: IvanPetakNeuralab/action-wordpress-plugin-build-zip@develop
+    - name: Upload release asset
+      uses: softprops/action-gh-release@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        files: ${{ github.workspace }}/${{ github.event.repository.name }}.zip

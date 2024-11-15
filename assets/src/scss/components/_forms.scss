@@ -1,0 +1,143 @@
+.form-field {
+  margin-bottom: calc($spacer * 5);
+  width: 380px;
+
+  .invalid-message {
+    @extend %scale-6;
+    display: inline-block;
+    color: $red-1;
+    font-weight: 400;
+    margin-top: $spacer;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: calc($spacer / 2);
+      background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'><path fill-rule='evenodd' d='M8.59997 2C8.34917 2 8.1029 2.06675 7.88597 2.19349C7.66944 2.32 7.48984 2.50181 7.3653 2.72056L7.36464 2.72173L2.1248 11.84C1.99956 12.0585 1.93352 12.3064 1.9333 12.5587C1.93308 12.8111 1.99868 13.0591 2.12354 13.2778C2.24838 13.4966 2.4281 13.6784 2.64468 13.8052C2.86126 13.9319 3.1071 13.9991 3.35756 14H3.35924H13.8407H13.8424C14.0928 13.9991 14.3387 13.9319 14.5552 13.8052C14.7718 13.6784 14.9516 13.4966 15.0764 13.2778C15.2012 13.0591 15.2668 12.8111 15.2666 12.5587C15.2664 12.3064 15.2001 12.0581 15.0748 11.8395L9.8353 2.72173L9.8347 2.72061C9.71017 2.50184 9.53057 2.32001 9.31397 2.19349C9.09704 2.06675 8.85077 2 8.59997 2ZM8.59997 6.3201C8.8631 6.3201 9.07644 6.535 9.07644 6.80007V9.20007C9.07644 9.46513 8.8631 9.68007 8.59997 9.68007C8.33684 9.68007 8.12357 9.46513 8.12357 9.20007V6.80007C8.12357 6.535 8.33684 6.3201 8.59997 6.3201ZM8.59997 12.08C8.9947 12.08 9.31464 11.7577 9.31464 11.3601C9.31464 10.9624 8.9947 10.6401 8.59997 10.6401C8.2053 10.6401 7.88537 10.9624 7.88537 11.3601C7.88537 11.7577 8.2053 12.08 8.59997 12.08Z' fill='#{$red-1}'/></svg>"));
+      vertical-align: text-bottom;
+    }
+  }
+}
+
+%form-control {
+	@extend %scale-4;
+	display: block;
+	padding: $spacer;
+	color: $blue-1;
+	background-color: $white;
+	background-clip: padding-box;
+	border: 1px solid $blue-1;
+	border-radius: 2px;
+
+  @include base-transition((color, border-color, box-shadow, opacity));
+
+	&:focus {
+		outline: 0;
+    box-shadow: none;
+		border-color: $blue-2;
+	}
+
+	&::placeholder {
+		color: get-prop("form-control-placeholder-color");
+		opacity: 0.5;
+	}
+
+	&:disabled {
+		opacity: .5;
+	}
+
+  &:read-only {
+    background-color: $blue-4;
+  }
+
+  &--invalid {
+    border-color: $red-1;
+  }
+}
+
+.form-control {
+  @extend %form-control;
+}
+
+.form-control--invalid {
+  transition: none !important;
+  border-color: $red-1 !important;
+}
+
+%form-label,
+.form-label {
+	@extend %scale-5;
+	margin-bottom: $spacer;
+  text-align: left;
+}
+
+%form-check,
+.form-check {
+  display: block;
+  margin-bottom: calc($spacer * 2);
+
+  label {
+    @extend %scale-4;
+    margin-left: $spacer
+  }
+
+  > input {
+    appearance: none;
+    float: left;
+    vertical-align: top;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+
+    margin: 0;
+    margin-top: calc(calc(24px - 18px) / 2); // adjust for line height
+
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $orange-2;
+    box-shadow: none;
+
+    @include base-transition((border-color, background-color, box-shadow));
+
+    &[type="checkbox"] {
+      border-radius: .2rem;
+    }
+
+    &[type="radio"] {
+      border-radius: 50%;
+    }
+
+    &:focus {
+      border-color: $orange-2;
+      outline: 0;
+      box-shadow: 0;
+    }
+
+    &:checked {
+      background-color: $orange-2;
+      border-color: $orange-2;
+
+      &[type="checkbox"] {
+        background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'><path d='M13.7617 6.86428C14.0691 6.57102 14.0806 6.0841 13.7873 5.77671C13.4941 5.46932 13.0072 5.45786 12.6998 5.75111L7.587 10.6288L5.30068 8.44388C4.99354 8.15038 4.50662 8.16138 4.21311 8.46858C3.91959 8.77568 3.93064 9.26258 4.23778 9.55608L7.0551 12.2485C7.3522 12.5324 7.8201 12.5326 8.1175 12.2489L13.7617 6.86428Z' fill='#{$white}'/></svg>"));
+      }
+    }
+
+    &:disabled {
+      pointer-events: none;
+      filter: none;
+      opacity: .5;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+
+
+

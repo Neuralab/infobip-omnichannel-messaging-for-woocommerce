@@ -1,0 +1,671 @@
+# Copyright (C) 2024 Neuralab
+# This file is distributed under the GPL v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Infobip Omnichannel Messaging for WooCommerce 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/omnichannel-messaging-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-11-14T09:36:40+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: infobip-omnichannel\n"
+
+#. Plugin Name of the plugin
+#: D:\www-neuralab\infobip-omnichannel\wp-content\plugins\omnichannel-messaging-for-woocommerce\infobip-omnichannel-messaging-for-woocommerce.php
+msgid "Infobip Omnichannel Messaging for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: D:\www-neuralab\infobip-omnichannel\wp-content\plugins\omnichannel-messaging-for-woocommerce\infobip-omnichannel-messaging-for-woocommerce.php
+msgid "https://github.com/Neuralab/infobip-omnichannel-messaging-for-woocommerce"
+msgstr ""
+
+#. Description of the plugin
+#: D:\www-neuralab\infobip-omnichannel\wp-content\plugins\omnichannel-messaging-for-woocommerce\infobip-omnichannel-messaging-for-woocommerce.php
+msgid "Enhance your customer experience by integrating omnichannel communication into your WooCommerce store."
+msgstr ""
+
+#. Author of the plugin
+#: D:\www-neuralab\infobip-omnichannel\wp-content\plugins\omnichannel-messaging-for-woocommerce\infobip-omnichannel-messaging-for-woocommerce.php
+msgid "Neuralab"
+msgstr ""
+
+#. Author URI of the plugin
+#: D:\www-neuralab\infobip-omnichannel\wp-content\plugins\omnichannel-messaging-for-woocommerce\infobip-omnichannel-messaging-for-woocommerce.php
+msgid "https://neuralab.net"
+msgstr ""
+
+#: includes/class-infobip-omnichannel.php:167
+#: includes/Modules/Email.php:44
+#: includes/Modules/SMS.php:55
+#: templates/modules/email.php:59
+#: templates/modules/sms.php:60
+msgid "Settings"
+msgstr ""
+
+#: includes/Core/Mailer.php:98
+msgid "Email address is not valid."
+msgstr ""
+
+#: includes/Core/Settings.php:95
+#: templates/dashboard.php:16
+msgid "Dashboard"
+msgstr ""
+
+#: includes/Core/Settings.php:97
+msgid "General Settings"
+msgstr ""
+
+#: includes/Core/Settings.php:98
+#: templates/help.php:11
+msgid "Help & Support"
+msgstr ""
+
+#: includes/Core/Settings.php:203
+#: includes/Core/Settings.php:204
+msgid "Omnichannel"
+msgstr ""
+
+#: includes/Extras/OrderMessages.php:62
+msgid "Send Customer SMS"
+msgstr ""
+
+#: includes/Extras/OrderStatusChanges.php:48
+#: includes/Extras/OrderStatusChanges.php:101
+msgid "Please enter a phone number in address fields if you wish to receive SMS notifications."
+msgstr ""
+
+#: includes/Extras/OrderStatusChanges.php:81
+#: includes/Extras/OrderStatusChanges.php:96
+msgid "Receive notifications about this order via SMS."
+msgstr ""
+
+#. translators: Status changes SMS text.
+#: includes/Extras/OrderStatusChanges.php:145
+msgid "The status of your order (%1$s) has been updated to: %2$s. Click here to view the details %3$s"
+msgstr ""
+
+#: includes/Modules/Email.php:36
+#: templates/modules/email.php:16
+msgid "Email Sending"
+msgstr ""
+
+#: includes/Modules/Email.php:37
+msgid "Improve your communication with customers by delivering timely updates and notifications through email"
+msgstr ""
+
+#: includes/Modules/Email.php:42
+#: includes/Modules/Export.php:47
+#: includes/Modules/SMS.php:53
+#: templates/modules/email.php:21
+#: templates/modules/export.php:19
+#: templates/modules/sms.php:20
+msgid "About"
+msgstr ""
+
+#: includes/Modules/Email.php:43
+#: includes/Modules/SMS.php:54
+#: templates/modules/email.php:36
+#: templates/modules/sms.php:38
+msgid "Testing"
+msgstr ""
+
+#: includes/Modules/Email.php:59
+#: includes/Modules/SMS.php:70
+msgid "Nonce verification failed."
+msgstr ""
+
+#. translators: Warning message for missing sender email address.
+#: includes/Modules/Email.php:68
+#: templates/parts/modal-email.php:36
+msgid "Email sender address configuration missing please visit %s and setup an email address with validated domain."
+msgstr ""
+
+#: includes/Modules/Email.php:69
+#: templates/parts/modal-email.php:37
+#: templates/parts/settings-tutorial.php:113
+msgid "Email settings"
+msgstr ""
+
+#. translators: Test email subject.
+#: includes/Modules/Email.php:80
+msgid "Test email from %s"
+msgstr ""
+
+#: includes/Modules/Email.php:81
+#: templates/modules/email.php:51
+msgid "This is a test message email."
+msgstr ""
+
+#. translators: Error message if sending SMS failed.
+#: includes/Modules/Email.php:91
+msgid "Something went wrong while sending test email, if logging enabled, please check the %s for more info."
+msgstr ""
+
+#: includes/Modules/Email.php:92
+#: includes/Modules/SMS.php:102
+msgid "logs"
+msgstr ""
+
+#. translators: Email sent to Infobip API success message.
+#: includes/Modules/Email.php:103
+msgid "Email successfully sent for delivery, delivery reports can be checked in %s."
+msgstr ""
+
+#: includes/Modules/Email.php:104
+#: includes/Modules/SMS.php:114
+#: templates/modules/email.php:82
+#: templates/modules/sms.php:73
+msgid "Infobip Logs"
+msgstr ""
+
+#: includes/Modules/Export.php:42
+msgid "Data Export"
+msgstr ""
+
+#: includes/Modules/Export.php:43
+msgid "Effortlessly transfer customer data and interactions from WooCommerce store to Infobip People"
+msgstr ""
+
+#: includes/Modules/Export.php:48
+#: templates/modules/export.php:15
+#: templates/modules/export.php:36
+msgid "Export"
+msgstr ""
+
+#: includes/Modules/Export.php:52
+msgid "First Name"
+msgstr ""
+
+#: includes/Modules/Export.php:53
+msgid "Last Name"
+msgstr ""
+
+#: includes/Modules/Export.php:54
+msgid "Phone"
+msgstr ""
+
+#: includes/Modules/Export.php:55
+#: templates/parts/settings-tutorial.php:97
+msgid "Email"
+msgstr ""
+
+#: includes/Modules/Export.php:56
+msgid "Billing Country"
+msgstr ""
+
+#: includes/Modules/Export.php:57
+msgid "Billing Zip Code"
+msgstr ""
+
+#: includes/Modules/Export.php:58
+msgid "Billing City"
+msgstr ""
+
+#: includes/Modules/Export.php:59
+msgid "Billing Address Line"
+msgstr ""
+
+#: includes/Modules/Export.php:60
+msgid "Shipping Country"
+msgstr ""
+
+#: includes/Modules/Export.php:61
+msgid "Shipping Zip Code"
+msgstr ""
+
+#: includes/Modules/Export.php:62
+msgid "Shipping City"
+msgstr ""
+
+#: includes/Modules/Export.php:63
+msgid "Shipping Address Line"
+msgstr ""
+
+#: includes/Modules/Export.php:119
+msgid "We couldn't find any customers to export."
+msgstr ""
+
+#: includes/Modules/SMS.php:47
+#: templates/modules/sms.php:15
+msgid "SMS Sending"
+msgstr ""
+
+#: includes/Modules/SMS.php:48
+msgid "Enhance your communication with customers by delivering timely updates and notifications through SMS"
+msgstr ""
+
+#. translators: Warning message for missing SMS sender info.
+#: includes/Modules/SMS.php:78
+#: templates/parts/modal-sms.php:37
+msgid "SMS sender number configuration missing, please go to %s and setup a validated sender number."
+msgstr ""
+
+#: includes/Modules/SMS.php:79
+#: templates/parts/modal-sms.php:38
+#: templates/parts/settings-tutorial.php:92
+msgid "SMS settings"
+msgstr ""
+
+#: includes/Modules/SMS.php:88
+#: templates/modules/sms.php:52
+msgid "This is a test SMS message."
+msgstr ""
+
+#. translators: Error message if sending SMS failed.
+#: includes/Modules/SMS.php:101
+msgid "Something went wrong while sending test SMS, if logging enabled, please check the %s for more info."
+msgstr ""
+
+#. translators: SMS sent to Infobip API success message.
+#: includes/Modules/SMS.php:113
+msgid "SMS message successfully sent for delivery, delivery reports can be checked in %s."
+msgstr ""
+
+#. translators: Message for obsolete hooks.
+#: includes/Utility/Helper.php:119
+msgid "Hook \"%s\" is currently not being used, these settings are being automatically handled by Infobip mailer."
+msgstr ""
+
+#: includes/Utility/Helper.php:283
+msgid "Issues with data sent to Infobip servers, check if all the Module settings are properly set or data you are sending is of correct format and try again. If the issue persists please contact plugin support."
+msgstr ""
+
+#: includes/Utility/Helper.php:285
+msgid "Issues connecting to Infobip servers, check if Base URL and API key are properly set and try again. If the issue persists please contact plugin support."
+msgstr ""
+
+#: templates/dashboard.php:21
+msgid "Features"
+msgstr ""
+
+#: templates/dashboard.php:37
+msgid "Configuration needed."
+msgstr ""
+
+#: templates/dashboard.php:39
+msgid "Go to settings"
+msgstr ""
+
+#: templates/dashboard.php:45
+msgid "View Details"
+msgstr ""
+
+#: templates/dashboard.php:63
+msgid "Useful links"
+msgstr ""
+
+#: templates/dashboard.php:67
+#: templates/general.php:25
+msgid "General settings"
+msgstr ""
+
+#: templates/dashboard.php:68
+msgid "Set up the Base URL and API key for seamless integration and functionality"
+msgstr ""
+
+#: templates/dashboard.php:72
+msgid "Go to General settings"
+msgstr ""
+
+#: templates/dashboard.php:77
+msgid "Help"
+msgstr ""
+
+#: templates/dashboard.php:78
+msgid "Access help and support for any questions or concerns"
+msgstr ""
+
+#: templates/dashboard.php:82
+msgid "Go to Help & Support"
+msgstr ""
+
+#. translators: General settings instruction text.
+#: templates/general.php:34
+msgid "Access your API key and base URL from the %1$s to unlock all functionalities. You can always start %2$s for more details."
+msgstr ""
+
+#: templates/general.php:35
+msgid "Infobip portal"
+msgstr ""
+
+#: templates/general.php:36
+#: templates/help.php:18
+#: templates/modules/email.php:72
+msgid "First-time configuration"
+msgstr ""
+
+#: templates/general.php:42
+#: templates/general.php:43
+#: templates/parts/settings-tutorial.php:63
+msgid "Base URL"
+msgstr ""
+
+#: templates/general.php:47
+#: templates/general.php:48
+#: templates/parts/settings-tutorial.php:68
+msgid "API key"
+msgstr ""
+
+#: templates/general.php:52
+msgid "Debug logs"
+msgstr ""
+
+#: templates/general.php:54
+msgid "Enable error logging"
+msgstr ""
+
+#. translators: General settings description of logger setting.
+#: templates/general.php:69
+msgid "Log errors and issues, if logger is enabled and there were issues you can find them in this file %s. New log file will be created for each day and only if there were issues logged otherwise file will not exist. You can find old logs in the logs list which can be also accessed from the link provided."
+msgstr ""
+
+#. translators: General settings note about debug logs.
+#: templates/general.php:79
+msgid "%s: this may log personal information. We recommend using this for debugging purposes only and deleting the logs when finished."
+msgstr ""
+
+#: templates/general.php:80
+msgid "Note"
+msgstr ""
+
+#: templates/general.php:86
+#: templates/modules/email.php:102
+#: templates/modules/sms.php:87
+msgid "Save settings"
+msgstr ""
+
+#: templates/help.php:12
+msgid "Explore our Help & Support section for easy access to resources and assistance."
+msgstr ""
+
+#: templates/help.php:14
+msgid "Contact us"
+msgstr ""
+
+#: templates/help.php:15
+msgid "Reach out to us via email for any inquiries or assistance you may need."
+msgstr ""
+
+#: templates/help.php:19
+msgid "If needed, you can start first time configuration again here."
+msgstr ""
+
+#: templates/help.php:22
+msgid "Start First-time Configuration"
+msgstr ""
+
+#: templates/modules/email.php:31
+msgid "Experience seamless communication with your customers through automated Email notifications. Instant updates can be received on order status changes to keep customers informed."
+msgstr ""
+
+#: templates/modules/email.php:38
+msgid "Easily test sending email messages for validation or demonstration purposes."
+msgstr ""
+
+#: templates/modules/email.php:45
+#: templates/modules/email.php:46
+msgid "Recipient email address"
+msgstr ""
+
+#: templates/modules/email.php:50
+msgid "Email message"
+msgstr ""
+
+#: templates/modules/email.php:54
+msgid "Send test message"
+msgstr ""
+
+#: templates/modules/email.php:64
+msgid "Configure basic preferences for Email sending."
+msgstr ""
+
+#. translators: Description about verifying email domain in Infobip portal.
+#: templates/modules/email.php:71
+msgid "Before using email sending, you should follow the %s to setup your email sender address."
+msgstr ""
+
+#. translators: Copy about alphanumeric senders not being validated.
+#: templates/modules/email.php:81
+msgid "To ensure you have entered a correct sender, please use the test form and check the delivery logs in the %s"
+msgstr ""
+
+#: templates/modules/email.php:88
+msgid "Below you can input your email address with verified domain and custom \"from\" email name."
+msgstr ""
+
+#: templates/modules/email.php:93
+#: templates/modules/email.php:94
+msgid "\"From\" email name"
+msgstr ""
+
+#: templates/modules/email.php:98
+#: templates/modules/email.php:99
+msgid "\"From\" email address"
+msgstr ""
+
+#: templates/modules/export.php:21
+msgid "Easily download your WooCommerce customer data in CSV format. You can import customer data into the People module in the Infobip portal."
+msgstr ""
+
+#. translators: How much of the export progress is underway in percentages.
+#: templates/modules/export.php:28
+msgid "You can find information on how to import the exported file in %s."
+msgstr ""
+
+#: templates/modules/export.php:38
+msgid "WooCommerce export data will include these customer data points: "
+msgstr ""
+
+#: templates/modules/export.php:50
+msgid "Export CSV File"
+msgstr ""
+
+#: templates/modules/export.php:54
+msgid "Export in progress..."
+msgstr ""
+
+#. translators: How much of the export progress is underway in percentages.
+#: templates/modules/export.php:65
+msgid "%s completed"
+msgstr ""
+
+#: templates/modules/export.php:73
+msgid "Download"
+msgstr ""
+
+#: templates/modules/sms.php:30
+msgid "Experience seamless communication with your customers through automated SMS notifications. Instant updates can be received on order status changes to keep customers informed."
+msgstr ""
+
+#: templates/modules/sms.php:33
+msgid "Additionally, take control with manual SMS messaging, allowing personalized communication directly from your WP Admin panel or towards specific customer during order edits."
+msgstr ""
+
+#: templates/modules/sms.php:39
+msgid "Easily test sending SMS messages for validation or demonstration purposes."
+msgstr ""
+
+#: templates/modules/sms.php:46
+#: templates/modules/sms.php:47
+msgid "Recipient phone number"
+msgstr ""
+
+#: templates/modules/sms.php:51
+msgid "SMS message"
+msgstr ""
+
+#: templates/modules/sms.php:55
+#: templates/parts/metabox-sms.php:23
+msgid "Send"
+msgstr ""
+
+#: templates/modules/sms.php:65
+msgid "Configure basic preferences for SMS sending."
+msgstr ""
+
+#. translators: Copy about alphanumeric senders not being validated.
+#: templates/modules/sms.php:72
+msgid "To ensure you have entered a correct sender, please use the test form and check the delivery logs in the %s."
+msgstr ""
+
+#: templates/modules/sms.php:79
+msgid "Below you can input your SMS sender number."
+msgstr ""
+
+#: templates/modules/sms.php:83
+#: templates/modules/sms.php:84
+msgid "Sender phone number"
+msgstr ""
+
+#: templates/parts/banner-tutorial.php:13
+#: templates/parts/settings-tutorial.php:16
+msgid "First-time Configuration"
+msgstr ""
+
+#: templates/parts/banner-tutorial.php:14
+msgid "To get started with the plugin, you need to complete the initial setup. These steps are essential for establishing a connection and ensuring the plugin functions correctly."
+msgstr ""
+
+#: templates/parts/banner-tutorial.php:15
+msgid "Start"
+msgstr ""
+
+#: templates/parts/metabox-sms.php:16
+msgid "Write a message"
+msgstr ""
+
+#: templates/parts/metabox-sms.php:17
+msgid "Send user a custom SMS message. If you wish to know if the SMS was delivered to the customer please log into your Infobip account dashboard and check the logs."
+msgstr ""
+
+#: templates/parts/modal-email.php:21
+msgid "Are you sure you want to turn on Email sending."
+msgstr ""
+
+#: templates/parts/modal-email.php:27
+msgid "Enabling email sending allows your application to send emails to users."
+msgstr ""
+
+#: templates/parts/modal-email.php:30
+msgid "Before using email sending, you should verify domain on Infobip portal."
+msgstr ""
+
+#: templates/parts/modal-email.php:43
+#: templates/parts/modal-sms.php:45
+msgid "Cancel"
+msgstr ""
+
+#: templates/parts/modal-email.php:44
+#: templates/parts/modal-sms.php:46
+msgid "Turn on"
+msgstr ""
+
+#: templates/parts/modal-sms.php:21
+msgid "Are you sure you want to turn on SMS sending."
+msgstr ""
+
+#: templates/parts/modal-sms.php:27
+msgid "Enabling SMS sending allows your application to send SMS messages to users."
+msgstr ""
+
+#: templates/parts/modal-sms.php:30
+msgid "Before using SMS sending, you should verify sender numbers on Infobip portal."
+msgstr ""
+
+#: templates/parts/settings-tutorial.php:19
+msgid "During the initial setup, you'll need to obtain your API key and base URL to integrate seamlessly with our services. Here's how to get started."
+msgstr ""
+
+#: templates/parts/settings-tutorial.php:25
+msgid "Create an Infobip account"
+msgstr ""
+
+#. translators: Instructions on creating Infobip account.
+#: templates/parts/settings-tutorial.php:32
+msgid "Infobip account is needed to setup the plugin so first you will need to %s."
+msgstr ""
+
+#: templates/parts/settings-tutorial.php:33
+msgid "create an account"
+msgstr ""
+
+#: templates/parts/settings-tutorial.php:42
+msgid "Connect your Infobip account"
+msgstr ""
+
+#. translators: Instructions on getting Infobip API Base URL.
+#: templates/parts/settings-tutorial.php:49
+msgid "Your API Base URL and key can be found on the home page of your %s."
+msgstr ""
+
+#: templates/parts/settings-tutorial.php:50
+msgid "Infobip account"
+msgstr ""
+
+#: templates/parts/settings-tutorial.php:56
+msgid "Copy these values and save them below."
+msgstr ""
+
+#: templates/parts/settings-tutorial.php:72
+msgid "Save"
+msgstr ""
+
+#: templates/parts/settings-tutorial.php:79
+msgid "Setup your senders and register your domain"
+msgstr ""
+
+#: templates/parts/settings-tutorial.php:82
+msgid "SMS"
+msgstr ""
+
+#: templates/parts/settings-tutorial.php:84
+msgid "To start sending SMS messages you will need a sender number, you will be assigned a shared number after signup but it is recommended that you purchase your own sender number."
+msgstr ""
+
+#. translators: Copy about getting verified numbers from Infobip.
+#: templates/parts/settings-tutorial.php:90
+msgid "You can find more info about your numbers %1$s and after you decide on a number copy it into %2$s to start using the SMS module."
+msgstr ""
+
+#: templates/parts/settings-tutorial.php:91
+#: templates/parts/settings-tutorial.php:112
+msgid "here"
+msgstr ""
+
+#. translators: Copy about registering email domain in Infobip.
+#: templates/parts/settings-tutorial.php:102
+msgid "To use email module, you will need to use a single sender or register your email domain in Infobip portal, you can follow the %1$s to get the sender email."
+msgstr ""
+
+#: templates/parts/settings-tutorial.php:103
+msgid "Email get-started documentation"
+msgstr ""
+
+#. translators: Copy about registering email domain in Infobip.
+#: templates/parts/settings-tutorial.php:111
+msgid "You can find all your registered domains %1$s and after you decide on the sender email address copy it into %2$s to start using the Email module."
+msgstr ""
+
+#: assets/dist/js/omnichannel.js:62
+#: assets/src/js/modules/ajax.js:71
+msgid "Message successfully sent!"
+msgstr ""
+
+#: assets/dist/js/omnichannel.js:65
+#: assets/src/js/modules/ajax.js:74
+msgid "Failed to send the message, please check Infobip Omnichannel Messaging for WooCommerce logs and settings."
+msgstr ""
+
+#: assets/dist/js/omnichannel.js:240
+#: assets/src/js/modules/options.js:63
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: assets/src/js/utilities/helper.js:30
+msgid "This field is required"
+msgstr ""

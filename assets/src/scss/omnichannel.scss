@@ -1,0 +1,73 @@
+
+@import 'abstracts/variables';
+@import 'abstracts/font';
+
+body[class*="infobip-omnichannel"] {
+  #wpwrap {
+    background-color: $blue-5;
+    color: $blue-1;
+  }
+}
+
+.toplevel_page_infobip-omnichannel {
+  .grid-sidebar__content {
+    max-width: none !important;
+  }
+}
+
+.infobip-omnichannel-wrap {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  margin-left: -20px;
+  padding-top: 73px;
+
+  @import 'abstracts/utilities';
+  @import 'abstracts/base';
+  @import 'abstracts/layout';
+  @import 'abstracts/spacings';
+  @import 'abstracts/typography';
+  @import 'abstracts/str-replace';
+  @import 'abstracts/escape';
+
+  @import 'components/alert';
+  @import 'components/forms';
+  @import 'components/progress';
+  @import 'components/banner';
+  @import 'components/bullet';
+  @import 'components/button';
+  @import 'components/modal';
+  @import 'components/module';
+  @import 'components/navigation';
+  @import 'components/switch';
+  @import 'components/list';
+
+  .loading {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .form-label {
+    display: inline-block;
+  }
+
+  .form-input {
+    display: block;
+    margin-bottom: 24px;
+  }
+}
+
+.infobip-message-metabox {
+  textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .button {
+    &.loading {
+      opacity: .5;
+      pointer-events: none;
+    }
+  }
+}
+

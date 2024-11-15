@@ -1,0 +1,72 @@
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: get-var("btn-color");
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid get-var("btn-border-color");
+  border-radius: 2px;
+  background-color: get-var("btn-bg-color");
+
+  @include base-transition((background-color, border-color, color));
+
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus,
+  &.loading {
+    color: get-var("btn-hover-color");
+    border-color: get-var("btn-hover-border-color");
+    background-color: get-var("btn-hover-bg-color");
+    box-shadow: none;
+  }
+
+  &.loading,
+  &:disabled,
+  &.disabled,
+  fieldset:disabled {
+    pointer-events: none;
+    opacity: 50%;
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    color: get-var("btn-color");
+    border-color: get-var("btn-border-color");
+    background-color: get-var("btn-bg-color");
+  }
+}
+
+.btn--primary {
+  @include set-var("btn-color", $white);
+  @include set-var("btn-bg-color", $orange-2);
+  @include set-var("btn-border-color", $orange-2);
+  @include set-var("btn-hover-color", $white);
+  @include set-var("btn-hover-bg-color", $orange-1);
+  @include set-var("btn-hover-border-color", $orange-1);
+}
+
+.btn--secondary {
+  @include set-var("btn-color", $blue-1);
+  @include set-var("btn-bg-color", $white);
+  @include set-var("btn-border-color", $blue-1);
+  @include set-var("btn-hover-color", $orange-2);
+  @include set-var("btn-hover-bg-color", $white);
+  @include set-var("btn-hover-border-color", $orange-2);
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}

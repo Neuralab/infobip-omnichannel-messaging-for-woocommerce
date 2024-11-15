@@ -1,0 +1,28 @@
+{
+  "name": "infobip/omnichannel",
+  "description": "Infobip Omnichannel Messaging for WooCommerce integration",
+  "version": "1.0",
+  "keywords": [
+    "infobip",
+    "sms",
+    "email"
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "guzzlehttp/guzzle": "~7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "InfobipOmnichannel\\": "includes/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "3.0"
+  }
+}

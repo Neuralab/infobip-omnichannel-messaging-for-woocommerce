@@ -1,0 +1,30 @@
+.module {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: $spacer * 3;
+  background-color: $white;
+  border: 1px solid $blue-4;
+  border-radius: 2px;;
+  text-decoration: none;
+  color: initial;
+
+  .alert + .module__cta {
+    margin-top: 0;
+  }
+}
+
+.module__title {
+  margin-bottom: $spacer;
+}
+
+.module__description {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.module__cta {
+  margin-top: $spacer * 12;
+}

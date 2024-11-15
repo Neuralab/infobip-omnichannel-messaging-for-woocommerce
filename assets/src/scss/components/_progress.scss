@@ -1,0 +1,24 @@
+.media-item {
+  display: block;
+}
+
+.bar,
+.progress {
+  margin: 0;
+}
+
+.progress {
+  float: none;
+  height: 12px;
+  width: 100%;
+  background-color: $orange-3;
+  border: 1px solid $orange-2;
+}
+
+.bar {
+  background-color: $orange-2;
+}
+
+.percent {
+  font-weight: 400;
+}
