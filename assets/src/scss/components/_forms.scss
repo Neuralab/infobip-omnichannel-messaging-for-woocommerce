@@ -19,6 +19,14 @@
       vertical-align: text-bottom;
     }
   }
+
+  textarea {
+    width: auto;
+  }
+}
+
+.form-field--code {
+  width: auto;
 }
 
 %form-control {

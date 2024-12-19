@@ -23,10 +23,24 @@ a {
   text-underline-offset: 3px;
   font-weight: 700;
 
+  @extend %scale-4;
+
   @include base-transition(color);
+
+  .icon {
+    display: inline-block;
+    vertical-align: text-bottom;
+    fill: $blue-2;
+
+    @include base-transition(fill);
+  }
 
   &:hover {
     color: $blue-1;
+
+    .icon {
+      fill: $blue-1;
+    }
   }
 }
 

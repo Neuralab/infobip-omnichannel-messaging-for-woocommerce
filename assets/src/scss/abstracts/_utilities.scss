@@ -53,6 +53,18 @@
   justify-content: space-between;
 }
 
+.fw-normal {
+  font-weight: $font-weight-normal;
+}
+
+.fw-semibold {
+  font-weight: $font-weight-semibold;
+}
+
+.fw-bold {
+  font-weight: $font-weight-bold;
+}
+
 .mw-none {
   max-width: none !important;
 }

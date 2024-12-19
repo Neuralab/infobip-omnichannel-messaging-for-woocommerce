@@ -66,6 +66,9 @@ $font-scale: (
   6: ( font-size: 12px, line-height: 16px ),
 );
 
+$font-weight-normal:   400;
+$font-weight-semibold: 600;
+$font-weight-bold:     700;
 
 /**
  * Transitions
@@ -77,7 +80,6 @@ $trans-timing-function-base: ease-in-out;
 /**
  * Characters which are escaped by the escape-svg function
  */
-
 $escaped-characters: (
   ("<", "%3c"),
   (">", "%3e"),

@@ -13,6 +13,7 @@ use \Automattic\WooCommerce\Utilities\FeaturesUtil;
 use \InfobipOmnichannel\Modules\Email;
 use \InfobipOmnichannel\Modules\SMS;
 use \InfobipOmnichannel\Modules\Export;
+use \InfobipOmnichannel\Modules\LiveChat;
 
 use \InfobipOmnichannel\Core\Settings;
 use \InfobipOmnichannel\Utility\Helper;
@@ -96,9 +97,10 @@ final class Infobip_Omnichannel {
 		}
 
 		// Order of creating Module instances also directs the order Modules appear in admin.
-		new SMS();     // 1
-		new Email();   // 2
-		new Export();  // 3
+		new SMS();       // 1
+		new Email();     // 2
+		new Export();    // 3
+		new LiveChat();  // 4
 
 		new Settings();
 	}

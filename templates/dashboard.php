@@ -7,7 +7,7 @@
  *  $args['settings] - \InfobipOmnichannel\Core\Settings instance
  *
  * @package InfobipOmnichannel\Template
- * @version 1.0
+ * @version 1.1
  */
 
 use \InfobipOmnichannel\Utility\Helper;
@@ -61,6 +61,23 @@ use \InfobipOmnichannel\Utility\Helper;
 </form>
 
 <h2><?php esc_html_e( 'Useful links', 'infobip-omnichannel' ); ?></h2>
+<div class="grid-dashboard mb-5">
+	<?php foreach ( $args['settings']::get_helpful_links() as $helpful_link ) { ?>
+		<div class="module">
+			<div class="mb-3">
+				<h3 class="module__title"><?php echo esc_html( $helpful_link['title'] ); ?></h3>
+				<p class="module__description"><?php echo esc_html( $helpful_link['description'] ); ?></p>
+			</div>
+
+			<a class="external" href="<?php echo esc_url( $helpful_link['anchor_url'] ); ?>" target="_blank">
+				<?php echo esc_html( $helpful_link['anchor_text'] ); ?>
+				<?php Helper::render_svg( 'icon-link-external' ); ?>
+			</a>
+		</div>
+	<?php } ?>
+</div>
+
+<h2><?php esc_html_e( 'General', 'infobip-omnichannel' ); ?></h2>
 <div class="grid-dashboard">
 	<div class="module">
 		<div class="mb-3">

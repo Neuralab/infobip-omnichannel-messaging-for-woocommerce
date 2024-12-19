@@ -3,7 +3,7 @@
  * Plugin Name: Infobip Omnichannel Messaging for WooCommerce
  * Plugin URI:  https://github.com/Neuralab/infobip-omnichannel-messaging-for-woocommerce
  * Description: Enhance your customer experience by integrating omnichannel communication into your WooCommerce store.
- * Version:     1.0
+ * Version:     1.1
  * Author:      Neuralab
  * Author URI:  https://neuralab.net
  * Text Domain: infobip-omnichannel
@@ -30,7 +30,7 @@ if ( ! defined( 'IOMNI_ROOT_FILE' ) ) {
 }
 // Define plugin version.
 if ( ! defined( 'IOMNI_PLUGIN_VER' ) ) {
-	define( 'IOMNI_PLUGIN_VER', '1.0' );
+	define( 'IOMNI_PLUGIN_VER', '1.1' );
 }
 
 if ( ! class_exists( 'Infobip_Omnichannel' ) ) {

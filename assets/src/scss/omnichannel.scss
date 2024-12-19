@@ -22,12 +22,12 @@ body[class*="infobip-omnichannel"] {
   padding-top: 73px;
 
   @import 'abstracts/utilities';
-  @import 'abstracts/base';
-  @import 'abstracts/layout';
   @import 'abstracts/spacings';
   @import 'abstracts/typography';
   @import 'abstracts/str-replace';
   @import 'abstracts/escape';
+  @import 'abstracts/base';
+  @import 'abstracts/layout';
 
   @import 'components/alert';
   @import 'components/forms';

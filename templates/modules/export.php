@@ -9,9 +9,10 @@
  * @package InfobipOmnichannel\Template
  * @version 1.0
  */
+
 ?>
 
-<h4><?php esc_html_e( 'Export', 'infobip-omnichannel' ); ?></h4>
+<h4><?php esc_html_e( 'Data Export', 'infobip-omnichannel' ); ?></h4>
 
 <div class="tabs">
 	<section id="about" class="active">
@@ -36,7 +37,7 @@
 		<p class="mb-5">
 			<?php esc_html_e( 'WooCommerce export data will include these customer data points: ', 'infobip-omnichannel' ); ?>
 		</p>
-		<ul class="list-styled">
+		<ul class="list-styled mb-5">
 			<?php foreach ( $args['module']->export_fields as $field ) { ?>
 				<li><?php echo esc_html( $field ); ?></li>
 			<?php } ?>

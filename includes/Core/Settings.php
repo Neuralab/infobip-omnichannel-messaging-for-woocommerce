@@ -132,18 +132,18 @@ class Settings {
 	/**
 	 * Validate non module specific settings
 	 *
-	 * @param   array $value    The sanitized option value.
+	 * @param   array $values    The sanitized option value.
 	 *
-	 * @return  array|WP_Error  Pass on the values or trigger error
+	 * @return  array|WP_Error   Pass on the values or trigger error
 	 */
-	public function settings_validate( $value ) {
+	public function settings_validate( $values ) {
 		// Check if API access credentials are valid.
-		if ( isset( $value['api_key'] ) || isset( $value['base_url'] ) ) {
+		if ( isset( $values['api_key'] ) || isset( $values['base_url'] ) ) {
 			$api_key = Helper::get_setting( 'api_key', 'general' );
 
 			// Prevent saving masked data.
-			if ( false !== strpos( $value['api_key'], '•' ) ) {
-				$value['api_key'] = $api_key;
+			if ( false !== strpos( $values['api_key'], '•' ) ) {
+				$values['api_key'] = $api_key;
 			}
 		}
 
@@ -151,16 +151,26 @@ class Settings {
 		$single_enabler = filter_input( INPUT_POST, 'single_module_enabler', FILTER_SANITIZE_SPECIAL_CHARS );
 		if ( $single_enabler ) {
 			$settings = Helper::get_settings();
-			if ( $value ) {
-				$settings = array_merge( (array) $settings, (array) $value );
+			if ( $values ) {
+				$settings = array_merge( (array) $settings, (array) $values );
 			} else {
 				unset( $settings[ $single_enabler . '_enabled' ] );
 			}
 
-			$value = $settings;
+			$values = $settings;
 		}
 
-		return $value ? array_filter( $value, 'sanitize_text_field' ) : $value;
+		if ( $values ) {
+			foreach ( $values as $key => $value ) {
+				if ( str_contains( $key, 'code' ) ) {
+					continue;
+				}
+
+				$values[ $key ] = sanitize_text_field( $value );
+			}
+		}
+
+		return $values;
 	}
 
 	/**
@@ -219,5 +229,33 @@ class Settings {
 				);
 			}
 		}
+	}
+
+	/**
+	 * Returns array of helpful link for Infobip related integrations.
+	 *
+	 * @return  array  Helpful link with descriptions and documentation links.
+	 */
+	public static function get_helpful_links() {
+		return [
+			'zapier'  => [
+				'title'       => __( 'Zapier Integration', 'infobip-omnichannel' ),
+				'description' => __( 'Automate your workflows by integrating Infobip messaging channels with Zapier', 'infobip-omnichannel' ),
+				'anchor_text' => __( 'Learn more about Zapier messaging integration', 'infobip-omnichannel' ),
+				'anchor_url'  => 'https://www.infobip.com/docs/integrations/zapier-for-infobip#integration',
+			],
+			'slack'   => [
+				'title'       => __( 'Slack Integration', 'infobip-omnichannel' ),
+				'description' => __( 'Streamline team collaboration by integrating Infobip Conversations with Slack', 'infobip-omnichannel' ),
+				'anchor_text' => __( 'Learn more about Slack messaging integration', 'infobip-omnichannel' ),
+				'anchor_url'  => 'https://www.infobip.com/docs/integrations/zapier-for-infobip#integration',
+			],
+			'postman' => [
+				'title'       => __( 'Postman Integration', 'infobip-omnichannel' ),
+				'description' => __( 'Explore Infobip’s public API collections on Postman', 'infobip-omnichannel' ),
+				'anchor_text' => __( 'Discover Infobip on Postman', 'infobip-omnichannel' ),
+				'anchor_url'  => 'https://www.postman.com/infobip',
+			],
+		];
 	}
 }

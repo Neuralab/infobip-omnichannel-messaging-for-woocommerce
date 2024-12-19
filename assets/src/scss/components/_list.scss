@@ -1,11 +1,25 @@
 .list-styled {
-  list-style-type: disc;
-  list-style-position: inside;
-  margin-bottom: $spacer * 5;
+  list-style-type: none;
+  margin: 0;
+
   @extend %scale-3;
 
-  li::marker {
-    color: $orange-2;
-    margin-right: $spacer;
+  li {
+    position: relative;
+    margin-bottom: $spacer;
+    padding-left: calc(24px + calc($spacer * 2));
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+
+      background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><circle cx='12' cy='12' r='3' fill='#{$orange-2}'/></svg>"));
+      background-repeat: no-repeat;
+    }
   }
 }

@@ -1,4 +1,8 @@
 *** Infobip Omnichannel Messaging for WooCommerce Changelog ***
 
+1.1
+* Add Live Chat module
+* Add Infobip integrations links
+
 1.0
 * Initial stable release
