@@ -248,7 +248,7 @@ class Settings {
 				'title'       => __( 'Slack Integration', 'infobip-omnichannel' ),
 				'description' => __( 'Streamline team collaboration by integrating Infobip Conversations with Slack', 'infobip-omnichannel' ),
 				'anchor_text' => __( 'Learn more about Slack messaging integration', 'infobip-omnichannel' ),
-				'anchor_url'  => 'https://www.infobip.com/docs/integrations/zapier-for-infobip#integration',
+				'anchor_url'  => 'https://www.infobip.com/docs/integrations/slack-for-conversations#integration-guide',
 			],
 			'postman' => [
 				'title'       => __( 'Postman Integration', 'infobip-omnichannel' ),

@@ -33,7 +33,7 @@ use \InfobipOmnichannel\Utility\Helper;
 			<?php esc_html_e( 'Infobip’s Live Chat module brings advanced customer engagement capabilities directly to your WooCommerce store. Designed for modern eCommerce, this tool enables businesses to interact with their customers in real time, offering exceptional support and fostering trust.', 'infobip-omnichannel' ); ?>
 		</p>
 
-		<img class="mb-5" src="<?php echo esc_url( Helper::get_img_url( 'live-chat-image-1.png' ) ); ?>" alt="Infobip Live Chat widget example">
+		<img class="mb-5 mw-100" src="<?php echo esc_url( Helper::get_img_url( 'live-chat-image-1.jpg' ) ); ?>" alt="Infobip Live Chat widget example">
 
 		<p class="fw-bold mb-2">
 			<?php esc_html_e( 'Key Features (all managed through the Answers platform):', 'infobip-omnichannel' ); ?>
@@ -81,7 +81,7 @@ use \InfobipOmnichannel\Utility\Helper;
 			</li>
 		</ul>
 
-		<img class="mb-5" src="<?php echo esc_url( Helper::get_img_url( 'live-chat-image-2.png' ) ); ?>" alt="Infobip Live Chat widget example">
+		<img class="mb-5 mw-100" src="<?php echo esc_url( Helper::get_img_url( 'live-chat-image-2.jpg' ) ); ?>" alt="Infobip Live Chat widget example">
 	</section>
 
 	<section id="settings">

@@ -18,7 +18,7 @@ $modal_id = 'modal-' . $args['module']->module_id;
 <div id="<?php echo esc_attr( $modal_id ); ?>" class="modal <?php echo esc_attr( $args['module']->is_setup_needed() ? '' : 'activate' ); ?>">
 	<span class="modal-backdrop iomni-modal-cancel" data-modal="<?php echo esc_attr( $modal_id ); ?>"></span>
 	<div class="modal-content">
-		<h1 class="modal-title"><?php esc_html_e( 'Are you shure you want to turn on Live Chat?', 'infobip-omnichannel' ); ?></h1>
+		<h1 class="modal-title"><?php esc_html_e( 'Are you sure you want to turn on Live Chat?', 'infobip-omnichannel' ); ?></h1>
 		<a href="#" class="iomni-modal-cancel iomni-modal-close-icon" data-modal="<?php echo esc_attr( $modal_id ); ?>">
 			<?php Helper::render_svg( 'icon-close' ); ?>
 		</a>
